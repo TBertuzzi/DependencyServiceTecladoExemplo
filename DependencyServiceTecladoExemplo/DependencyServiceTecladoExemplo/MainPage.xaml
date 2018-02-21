@@ -2,10 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:DependencyServiceTecladoExemplo"
-             x:Class="DependencyServiceTecladoExemplo.MainPage">
+             x:Class="DependencyServiceTecladoExemplo.MainPage" Padding="0,20,0,0">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout>
+        <Label Text="O que deseja pesquisar?"  />
+        <Entry Placeholder="Este seria seu campo de pesquisa"></Entry>
+        <Button Text="Some DIABO!" Clicked="btnEsconderTeclado_Clicked" ></Button>
+    </StackLayout>
+	
+         
 
 </ContentPage>

@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DependencyServiceTecladoExemplo.Helpers;
+using System;
 using Xamarin.Forms;
 
 namespace DependencyServiceTecladoExemplo
@@ -13,5 +10,10 @@ namespace DependencyServiceTecladoExemplo
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void btnEsconderTeclado_Clicked(object sender, EventArgs e)
+        {
+            DependencyService.Get<IKeyboardHelper>().HideKeyboard();
+        }
+    }
 }
